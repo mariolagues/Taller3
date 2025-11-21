@@ -11,6 +11,99 @@ public class Main {
 		leerProyectos();
 		leerTareas();
 		
+		sc = new Scanner(System.in); 
+		int opcion;
+		
+		do {
+			System.out.println("Menú Principal");
+			System.out.println("1) Menú administrador");
+			System.out.println("2) Menú Usuario");
+			System.out.print("Ingrese Opcion");
+			opcion = sc.nextInt();
+			sc.nextLine();
+			
+			switch(opcion) {
+			case 1:
+				menuAdministrador();
+				break;
+			case 2:
+				menuUsuario();
+				
+			default:
+				System.out.println("Ingrese una opcion correcta");
+			}
+			
+		}while(opcion != 3);
+		
+	}
+	private static void menuUsuario() {
+		sc = new Scanner(System.in);
+		int opcion;
+		
+		do {
+			System.out.println("Menú Usuario");
+			System.out.println("1) Ver proyectos disponibles");
+			System.out.println("2) Ver tareas asignadas");
+			System.out.println("3) Actualizar estado de una tarea");
+			System.out.println("4) Aplicar Visitor sobre tareas");
+			System.out.println("6) Volver al menú principal");
+			System.out.print("Ingrese opcion: ");
+			opcion = sc.nextInt();
+			sc.nextLine();
+	
+			switch(opcion) {
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				System.out.println("Volvieldo al menú principal");
+			
+			}
+			
+		}while(opcion != 5);
+		
+	}
+	private static void menuAdministrador() {
+		sc = new Scanner(System.in);
+		int opcion;
+		
+		do {
+			System.out.println("Menú administador");
+			System.out.println("1) Ver listas completa de proyectos y tareas");
+			System.out.println("2) Agregar o eliminar un proyecto");
+			System.out.println("3) Agregar o eliminar una tarea en un proyecto");
+			System.out.println("4) Asignar prioridades con Strategy");
+			System.out.println("5) Generar reporte de proyectos");
+			System.out.println("6) Volver al menú principal");
+			System.out.print("Ingrese opcion: ");
+			opcion = sc.nextInt();
+			sc.nextLine();
+			
+			switch(opcion) {
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				System.out.println("Volvieldo al menú principal");
+			
+			}
+			
+		}while(opcion != 5);
+		
 		
 	}
 		
